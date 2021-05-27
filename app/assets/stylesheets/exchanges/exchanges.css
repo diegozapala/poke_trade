@@ -1,0 +1,31 @@
+#exchanges .exchange_box {
+  margin: 80px auto;
+  width: 80%;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#exchanges .exchange_box.valid {
+  background-color: $color-valid;
+}
+#exchanges .exchange_box.invalid {
+  background-color: $color-invalid;
+}
+
+#exchanges .first_team, #exchanges .second_team {
+  width: 50%;
+}
+
+#exchanges .exchange_btn {
+  /*margin: 170px 50px;*/
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+#exchanges .exchange_btn .exchange_icon {
+  font-size: 80px;
+}

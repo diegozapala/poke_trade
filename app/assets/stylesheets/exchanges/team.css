@@ -1,0 +1,41 @@
+#exchanges .team .title {
+  text-align: center;
+  font-size: 20px;
+}
+
+#exchanges .team .team_box {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#exchanges .team .team_box .item {
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+  background-color: #e6e6e6;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#exchanges .team .team_box .item .poke_name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#exchanges .team .team_box .item .poke_img {
+  margin-top: 5px;
+  width: 110px;
+  height: 110px;
+}
+#exchanges .team .team_box .item .base_experience {
+  margin-top: -5px;
+  font-size: 20px;
+  font-weight: bold;
+}

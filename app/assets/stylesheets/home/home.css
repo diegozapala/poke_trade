@@ -1,0 +1,55 @@
+#home .exchange_box {
+  margin: 80px auto;
+  width: 80%;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 30px;
+}
+#home .exchange_box.valid {
+  background-color: $color-valid;
+}
+#home .exchange_box.invalid {
+  background-color: $color-invalid;
+}
+
+#home .exchange_box .flash_message {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#home .exchange_box .exchange_form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home .first_team, #home .second_team {
+  width: 50%;
+}
+
+
+#home .exchange_btn_field {
+  background-color: #0000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#home .exchange_btn {
+  margin: 170px 50px;
+  color: #888;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+#home .exchange_btn .exchange_icon {
+  font-size: 80px;
+}
+#home .exchange_btn .label {
+  font-size: 30px;
+}
+
+#home .exchange_btn:hover {
+  color: #333;
+  transition-duration: 300ms;
+}

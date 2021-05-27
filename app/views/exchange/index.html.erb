@@ -1,0 +1,29 @@
+<div id="exchanges">
+
+  <div class="exchanges_box">
+
+    <% @trades.each do |trade| %>
+      <div class="exchange_box <%= trade.is_valid ? 'valid' : 'invalid' %>">
+        <div class="first_team">
+          <%= render partial: 'team', locals: {key: 'first', title: 'Primeiro Time', team: trade.first_team} %>
+        </div>
+
+        <div class="exchange_btn">
+          <div class="exchange_icon">
+            <% if trade.is_valid %>
+              <i class="fas fa-check"></i>
+            <% else %>
+              <i class="fas fa-times"></i>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="second_team">
+          <%= render partial: 'team', locals: {key: 'second', title: 'Segundo Time', team: trade.second_team} %>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>

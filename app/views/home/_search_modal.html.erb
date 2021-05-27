@@ -1,0 +1,7 @@
+<div class="search_modal">
+  <div class="search_box">
+    <%= text_field_tag "poke_search_#{team}_#{key}", nil, class: 'search_field', placeholder: 'Procure o pokémon...' %>
+    <%= button_tag 'Procurar', type: 'button', class: 'search_btn' %>
+    <div class="error">Este pokémon não foi encontrado</div>
+  </div>
+</div>

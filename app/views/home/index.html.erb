@@ -1,0 +1,29 @@
+<div id="home">
+  <div class="exchange_box <%= 'valid' if flash[:notice].present? %> <%= 'invalid' if flash[:alert].present? %>">
+
+    <div class="flash_message">
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+    </div>
+
+
+    <%= form_tag(valid_exchange_path, id: "exchange_form", class: "exchange_form") do %>
+
+      <div class="first_team">
+        <%= render partial: 'team', locals: {key: 'first', title: 'Primeiro Time'} %>
+      </div>
+
+      <div class="exchange_btn">
+        <%= button_tag(type: 'submit', class: "exchange_btn_field") do %>
+          <div class="exchange_icon"><i class="fas fa-sync-alt"></i></div>
+          <div class="label">Trocar</div>
+        <% end %>
+      </div>
+
+      <div class="second_team">
+        <%= render partial: 'team', locals: {key: 'second', title: 'Segundo Time'} %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

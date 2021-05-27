@@ -1,0 +1,17 @@
+<div class="team" data_key=<%= key %>>
+
+  <div class="title"><%= title %></div>
+
+  <div class="team_box">
+    <% team.each do |poke| %>
+      <div class="item">
+        <div class="content">
+          <div class="poke_name"><%= poke["name"] %></div>
+          <div class="poke_img_box"><%= image_tag(poke["poke_img"], class: "poke_img") %></div>
+          <div class="base_experience"><%= poke["base_experience"] %></div>
+        </div>
+      </div>
+    <% end%>
+  </div>
+
+</div>

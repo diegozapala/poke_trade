@@ -1,0 +1,18 @@
+<div class="team" data_key=<%= key %>>
+
+  <div class="title"><%= title %></div>
+
+  <div class="team_box">
+    <% (1..6).each do |index| %>
+      <div class="item empty" data_key=<%= index %>>
+        <%= hidden_field_tag "#{key}[#{index}][name]", nil, class: "poke_name" %>
+        <%= hidden_field_tag "#{key}[#{index}][poke_img]", nil, class: "poke_img" %>
+        <%= hidden_field_tag "#{key}[#{index}][base_experience]", nil, class: "base_experience" %>
+
+        <div class="content"><i class="fas fa-plus"></i></div>
+        <%= render partial: 'search_modal', locals: {key: index, team: key} %>
+      </div>
+    <% end%>
+  </div>
+
+</div>
